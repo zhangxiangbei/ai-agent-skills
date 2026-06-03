@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MugaoParseOutput",
+  "type": "object",
+  "required": ["coreJudgment", "outline", "riskFlags"],
+  "properties": {
+    "coreJudgment": {
+      "type": "string"
+    },
+    "oneSentenceSummary": {
+      "type": "string"
+    },
+    "outline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "judgments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "platformAdaptations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "riskFlags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
+
